@@ -1,0 +1,77 @@
+body {
+    background: #141625;
+    font-family: 'Spartan', sans-serif;
+}
+
+.cabecalho {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    justify-content: space-between;
+    width: 103px;
+    height: 100vh;
+    background: #1E2139;  
+    border-radius: 0px 20px 20px 0px;
+}
+.avatar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.linha-cabecalho {
+    width: 103px;
+    height: 1px;
+    background: #cacaca;
+
+}
+.foto-avatar {
+    width: 50px;
+    margin: 30px 0px;
+}
+main {
+    width: 70%;
+    margin: 100px auto;
+}
+.titulo-principal {
+    display: grid;
+    gap: 10px;
+    align-items: center;
+    grid-template-columns: 1fr auto auto;
+    grid-template-rows: 1fr 1fr;
+}
+.filtro {
+    margin: 20px 0;
+    grid-row: span 2;
+    background: transparent;
+    border: none;
+    color: #FFFFFF;
+    font-family: 'Spartan', sans-serif;
+    font-weight: 500;
+}
+.botao-nova-fatura {
+    display: flex;
+    padding-right: 15px;
+    align-items: center;
+    justify-content:space-between;
+    gap: 5px;
+    grid-row: span 2;
+    height: 48px;
+    width: 150px;
+    border-radius: 48px;
+    border: none;
+    background: #7C5DFA;
+    font-family: 'Spartan', sans-serif;
+    font-weight: 500;
+    color: #FFFFFF;
+
+}
+.titulo-app {
+    font-size: 32px;
+    font-weight: 600;
+    color: #FFFFFF;
+}
+.total-faturas {
+    color: #FFFFFF;
+}
