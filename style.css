@@ -31,6 +31,8 @@ body {
     margin: 30px 0px;
 }
 main {
+    display: flex;
+    flex-direction: column;
     width: 70%;
     margin: 100px auto;
 }
@@ -43,6 +45,7 @@ main {
 }
 .filtro {
     margin: 20px 0;
+    margin-right: 20px;
     grid-row: span 2;
     background: transparent;
     border: none;
@@ -74,4 +77,76 @@ main {
 }
 .total-faturas {
     color: #FFFFFF;
+}
+.conteudo-principal-vazio{
+    align-self: center;
+    margin-top: 100px;
+}
+.conteudo-principal {
+    margin-top: 100px;
+}
+.cartao-invoice{
+    height: 72px;
+    border-radius: 8px;
+    background: #1E2139;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+.codigo-invoice {
+
+    width: 10%;
+}
+.vencimento-invoice {
+    width: 25%;
+}
+.nome-invoice {
+    width: 15%;
+}
+.valor-invoice {
+    width: 15%;
+    text-align: end;
+}
+.status-click{
+    display: flex;
+    width: 20%;
+    align-items: center;
+}
+.status-invoice {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    height: 40px;
+    border-radius: 8px;
+    font-weight: 600;
+}
+.pago {
+    background-color: rgb(51, 214, 159, 10%);
+    color: rgb(51, 214, 159);
+}
+.pendente {
+    background-color: rgb(255, 143, 0, 10%);
+    color: rgb(255, 143, 0);
+}
+.click-invoice {
+    padding: 10px;
+    transform: rotate(180deg);
+}
+
+
+
+
+
+
+
+
+
+
+
+.oculto {
+    display: none;
 }
