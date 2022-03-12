@@ -204,14 +204,14 @@ main {
     background-color: #7C5DFA;
     color: #FFFFFF;
 }
-.botao-cadastre-se {
+.botao-cadastre-se, .botao-ir-login{
     background: transparent;
     border: none;
     margin: 20px;
     color: #FFFFFF;
     font-size: 1rem;
 }
-.botao-cadastre-se:hover {
+.botao-cadastre-se:hover, .botao-ir-login:hover {
     text-decoration: underline;
 }
 
