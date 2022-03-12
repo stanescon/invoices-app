@@ -215,6 +215,35 @@ main {
     text-decoration: underline;
 }
 
+@media screen and (max-width:900px) {
+    .cabecalho {
+        width: 100vw;
+        height: 103px;
+        flex-direction: row;
+        border-radius: 0px;
+    }
+    .avatar {
+        flex-direction: row;
+    }
+    .linha-cabecalho {
+        width: 1px;
+        height: 103px;
+    }
+    .foto-avatar {
+        margin: 0px 30px;
+    }
+}
+@media screen and (max-width:620px) {
+    .cabecalho {
+        height: 80px;
+    }
+    .linha-cabecalho {
+        height: 80px;
+    }
+    .caixa-login, .caixa-register {
+        width: 300px;
+    }
+}
 
 
 
