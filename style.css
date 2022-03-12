@@ -159,7 +159,7 @@ main {
     color: #FFFFFF;
     font-weight: 600;
 }
-.input-nome-usuario, .input-senha, .input-nome-sobrenome, .input-nome-usuario-registro, .input-email-usuario, .input-senha-registro {
+.input-login-registro {
     width: 100%;
     font-size: 1.5rem;
     color: #FFFFFF;
@@ -183,24 +183,8 @@ main {
     pointer-events: none;
     transition: 0.5s;
 }
-.label-ativo {
-    top: -20px;
-    left: 0;
-    color: #7C5DFA;
-    font: 1rem;
-}
-.user-box .input-nome-usuario:focus + .label-login,
-.user-box .input-senha:focus + .label-login,
-.user-box .input-nome-usuario:valid + .label-login,
-.user-box .input-senha:valid + .label-login,
-.user-box .input-nome-sobrenome:focus + .label-login,
-.user-box .input-senha-registro:focus + .label-login,
-.user-box .input-nome-sobrenome:valid + .label-login,
-.user-box .input-senha-registro:valid + .label-login, 
-.user-box .input-nome-usuario-registro:focus + .label-login,
-.user-box .input-email-usuario:focus + .label-login,
-.user-box .input-nome-usuario-registro:valid + .label-login,
-.user-box .input-email-usuario:valid + .label-login {
+.user-box .input-login-registro:focus + .label-login,
+.user-box .input-login-registro:valid + .label-login {
     top: -20px;
     left: 0;
     color: #7C5DFA;
