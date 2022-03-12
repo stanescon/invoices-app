@@ -243,6 +243,10 @@ main {
     .caixa-login, .caixa-register {
         width: 300px;
     }
+    .foto-avatar {
+        width: 40px;
+        margin: 0px 20px;
+    }
 }
 
 
