@@ -136,11 +136,100 @@ main {
     padding: 10px;
     transform: rotate(180deg);
 }
-
-
-
-
-
+.caixa-login, .caixa-register{
+    padding: 30px;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 500px;
+    height: 400px;
+    background-color: #1E2139;
+    align-self: center;
+    border-radius: 15px;
+    box-shadow: 2px 2px 5px #1E2139;
+}
+.caixa-register{
+    height: 500px;
+}
+.titulo-login, .titulo-cadastre-se {
+    margin: 40px 0;
+    font-size: 2.3rem;
+    color: #FFFFFF;
+    font-weight: 600;
+}
+.input-nome-usuario, .input-senha, .input-nome-sobrenome, .input-nome-usuario-registro, .input-email-usuario, .input-senha-registro {
+    width: 100%;
+    font-size: 1.5rem;
+    color: #FFFFFF;
+    padding: 10px 0;
+    margin-bottom: 30px;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid #FFFFFF;
+    outline: none;
+}
+.user-box{
+    position: relative;
+    width: 100%;
+}
+.label-login {
+    font-size: 1.5rem;
+    color: #FFFFFF;
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    transition: 0.5s;
+}
+.label-ativo {
+    top: -20px;
+    left: 0;
+    color: #7C5DFA;
+    font: 1rem;
+}
+.user-box .input-nome-usuario:focus + .label-login,
+.user-box .input-senha:focus + .label-login,
+.user-box .input-nome-usuario:valid + .label-login,
+.user-box .input-senha:valid + .label-login,
+.user-box .input-nome-sobrenome:focus + .label-login,
+.user-box .input-senha-registro:focus + .label-login,
+.user-box .input-nome-sobrenome:valid + .label-login,
+.user-box .input-senha-registro:valid + .label-login, 
+.user-box .input-nome-usuario-registro:focus + .label-login,
+.user-box .input-email-usuario:focus + .label-login,
+.user-box .input-nome-usuario-registro:valid + .label-login,
+.user-box .input-email-usuario:valid + .label-login {
+    top: -20px;
+    left: 0;
+    color: #7C5DFA;
+    font-size: 1rem;
+}
+.botao-logar, .botao-cadastrar {
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 10px 30px;
+    font-family: 'Spartan', sans-serif;
+    border-radius: 5px;
+    border: none;
+    transition: 0.3s;
+}
+.botao-logar:hover, .botao-cadastrar:hover {
+    transform: scale(1.2);
+    background-color: #7C5DFA;
+    color: #FFFFFF;
+}
+.botao-cadastre-se {
+    background: transparent;
+    border: none;
+    margin: 20px;
+    color: #FFFFFF;
+    font-size: 1rem;
+}
+.botao-cadastre-se:hover {
+    text-decoration: underline;
+}
 
 
 

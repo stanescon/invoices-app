@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./style.css">
+
+    <title>Invoices</title>
+</head>
+<body>
+    <header class="cabecalho">
+        <img src="./imagens/logo.png" class="logo">
+        <div class="avatar">
+            <div class="linha-cabecalho"></div>
+            <img src="./imagens/icon-logo.png" class="foto-avatar">
+        </div>
+    </header>
+
+    <main>
+        <div class="caixa-login oculto">
+            <h1 class="titulo-login">Login</h1>
+            <div class="user-box">
+                <input type="text" id="nome-usuario" class="input-nome-usuario" required>
+                <label for="nome-usuario" class="label-login">Usuário</label>
+            </div>
+            <div class="user-box">
+                <input type="password" id="senha-usuario" class="input-senha" required>
+                <label for="senha-usuario" class="label-login">Senha</label>
+            </div>
+            <button class="botao-logar">Entrar</button>
+            <button class="botao-cadastre-se">Cadastre-se</button>
+        </div>
+        <div class="caixa-register">
+            <h1 class="titulo-cadastre-se">Cadastre-se</h1>
+            <div class="user-box">
+                <input type="text" id="nome" class="input-nome-sobrenome" required>
+                <label for="nome-usuario" class="label-login">Nome e Sobrenome</label>
+            </div>
+            <div class="user-box">
+                <input type="text" id="nome-usuario" class="input-nome-usuario-registro" required>
+                <label for="nome-usuario" class="label-login">Usuário</label>
+            </div>
+            <div class="user-box">
+                <input type="password" id="senha-usuario" class="input-senha-registro" required>
+                <label for="senha-usuario" class="label-login">Senha</label>
+            </div>
+            <div class="user-box">
+                <input type="email" id="nome-usuario" class="input-email-usuario" required>
+                <label for="nome-usuario" class="label-login">E-mail</label>
+            </div>
+            <button class="botao-cadastrar">Cadastrar</button>
+        </div>
+
+    </main>
+</body>
+</html>
