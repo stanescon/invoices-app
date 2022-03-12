@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./style.css">
+
+    <title>Invoices</title>
+</head>
+<body>
+    <header class="cabecalho">
+        <img src="./imagens/logo.png" class="logo">
+        <div class="avatar">
+            <div class="linha-cabecalho"></div>
+            <img src="./imagens/avatar.png" class="foto-avatar">
+        </div>
+    </header>
+    <main>
+        <div class="titulo-principal">
+            <h1 class="titulo-app">Invoices</h1>
+            <select class="filtro">
+                <option>Filtrar por status</option>
+                <option></option>
+                <option></option>
+            </select>
+            <button class="botao-nova-fatura">
+                <img src="./imagens/icon+.png" class="icon-mais"> Nova Fatura
+            </button>
+            <p class="total-faturas">Existe um total de 0 faturas</p>
+        </div>
+        <div class="conteudo-principal-vazio oculto">
+            <img src="./imagens/Group.png" class="imagem-invoices-vazio">
+        </div>
+        <div class="conteudo-principal">
+            <div class="cartao-invoice">
+                <p class="codigo-invoice">#RT3080</p>
+                <p class="vencimento-invoice">Vencimento: 19 Ago 2022</p>
+                <p class="nome-invoice">Jensen Huang</p>
+                <p class="valor-invoice">$ 1.800,90</p>
+                <div class="status-click">
+                    <p class="status-invoice pago">Pago</p>
+                    <img src="./imagens/back.png" class="click-invoice">
+                </div>
+            </div>
+
+            <div class="cartao-invoice">
+                <p class="codigo-invoice">#RT3080</p>
+                <p class="vencimento-invoice">Vencimento: 20 Set 2022</p>
+                <p class="nome-invoice">Alex Grim</p>
+                <p class="valor-invoice">$ 14.800,90</p>
+                <div class="status-click">
+                    <p class="status-invoice pendente">Pendente</p>
+                    <img src="./imagens/back.png" class="click-invoice">
+                </div>
+            </div>
+
+        </div>
+    </main>
+</body>
+</html>
