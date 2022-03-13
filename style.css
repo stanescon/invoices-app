@@ -43,6 +43,9 @@ main {
     grid-template-columns: 1fr auto auto;
     grid-template-rows: 1fr 1fr;
 }
+.vencimento-invoice-tab {
+    display: none;
+}
 .filtro {
     margin: 20px 0;
     margin-right: 20px;
@@ -52,6 +55,10 @@ main {
     color: #FFFFFF;
     font-family: 'Spartan', sans-serif;
     font-weight: 500;
+}
+.filtro option {
+    background: #141625;
+    color: #FFFFFF;
 }
 .botao-nova-fatura {
     display: flex;
@@ -215,7 +222,7 @@ main {
     text-decoration: underline;
 }
 
-@media screen and (max-width:900px) {
+@media screen and (max-width:1265px) {
     .cabecalho {
         width: 100vw;
         height: 103px;
@@ -232,8 +239,22 @@ main {
     .foto-avatar {
         margin: 0px 30px;
     }
+    main {
+        margin: 200px auto;
+        width: 90%;
+    }
+    .cartao-invoice p {
+        line-height: 1.5rem;
+        font-size: 0.8rem;
+    }
+    .vencimento-invoice-tab {
+        display: block;
+    }
+    .vencimento-invoice {
+        display: none;
+    }
 }
-@media screen and (max-width:620px) {
+@media screen and (max-width:650px) {
     .cabecalho {
         height: 80px;
     }
@@ -246,6 +267,9 @@ main {
     .foto-avatar {
         width: 40px;
         margin: 0px 20px;
+    }
+    .botao-nova-fatura{
+        width: 100px;
     }
 }
 
