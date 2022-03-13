@@ -104,8 +104,8 @@ main {
     margin-bottom: 20px;
 }
 .codigo-invoice {
-
     width: 10%;
+    font-weight: 600;
 }
 .vencimento-invoice {
     width: 25%;
@@ -116,6 +116,7 @@ main {
 .valor-invoice {
     width: 15%;
     text-align: end;
+    font-weight: 600;
 }
 .status-click{
     display: flex;
@@ -221,6 +222,9 @@ main {
 .botao-cadastre-se:hover, .botao-ir-login:hover {
     text-decoration: underline;
 }
+.barra-de-tarefas-invoices-mobile {
+    display: none;
+}
 
 @media screen and (max-width:1265px) {
     .cabecalho {
@@ -253,6 +257,39 @@ main {
     .vencimento-invoice {
         display: none;
     }
+    .barra-de-tarefas-invoices-mobile {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        background: #1e2139;
+        height: 100px;
+        width: 100vw;
+    }
+    .editar-invoice, .deletar-invoice, .marcar-pago{
+        margin: 0px 5px;
+        height: 50px;
+        border-radius: 50px;
+        border: none;
+        font-size: 14px;
+        font-weight: 600;
+        font-family: 'Spartan', sans-serif;
+        color: #ffffff ;
+    }
+    .editar-invoice{
+        width: 25%;
+        background: #252945;
+    } 
+    .deletar-invoice{
+        width: 25%;
+        background: #EC5757;
+    } 
+    .marcar-pago{
+        width: 35%;
+        background: #7C5DFA;
+    }
 }
 @media screen and (max-width:650px) {
     .cabecalho {
@@ -270,6 +307,38 @@ main {
     }
     .botao-nova-fatura{
         width: 100px;
+    }
+    .cartao-invoice{
+        height: 80px;
+        padding: 20px;
+        display: grid;
+        gap: 0px;
+        grid-template-columns: 2fr 1fr;
+        grid-row: 1fr 1fr 1fr;
+    }
+    .nome-invoice {
+        grid-column: 2;
+        grid-row: 1;
+        padding-left: 10px;
+        margin-bottom: 20px;
+    }
+    .codigo-invoice{
+        margin-bottom: 20px;
+    }
+    .status-click {
+        grid-row: 2 / span 2;
+        grid-column: 2;
+        padding-left: 10px;
+    }
+    .cartao-invoice p {
+        line-height: 1rem;
+        font-size: 12px;
+    }
+    .codigo-invoice, .nome-invoice, .vencimento-invoice, .status-click, .valor-invoice{
+        width: 100%;
+    }
+    .valor-invoice {
+        text-align: start;
     }
 }
 
