@@ -1,5 +1,7 @@
 const botaoCadastre = document.querySelector('.botao-cadastre-se');
 const botaoIrParaLogin = document.querySelector('.botao-ir-login');
+const botaoCadastrar = document.querySelector('.botao-cadastrar')
+const botaoLogar = document.querySelector('.botao-logar');
 
 botaoCadastre.onclick = function(){
     document.querySelector('.caixa-login').classList.add('oculto');
@@ -14,8 +16,6 @@ const nomeSobrenome = document.querySelector('#nome-cadastro');
 const usuarioCadastro = document.querySelector('#usuario-cadastro');
 const senhaCadastro = document.querySelector('#senha-cadastro');
 const emailCadastro = document.querySelector('#email-cadastro');
-
-const botaoCadastrar = document.querySelector('.botao-cadastrar')
 
 botaoCadastrar.onclick = function(){
     if(nomeSobrenome.value && usuarioCadastro.value && senhaCadastro.value && emailCadastro.value){
@@ -35,6 +35,13 @@ botaoCadastrar.onclick = function(){
             window.location.href = './conteudo-usuario.html';
         });
     }
+}
+
+botaoLogar.onclick = function(){
+    fetch('https://chs-invoice-app-be.herokuapp.com/users')
+    .then(resposta => resposta.json()).then(resposta => {
+        console.log(resposta)
+    })
 }
 
 
