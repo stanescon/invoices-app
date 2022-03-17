@@ -70,6 +70,7 @@ botaoLogar.onclick = function(){
                 console.log(resposta)
                 if(resposta.userId){
                     localStorage.setItem('userId', resposta.userId)
+                    window.location.href = './conteudo-usuario.html'
                 } else if(resposta.errorId && resposta.errorId === 201){
                     alert('Usuario e/ou senha icorreto/s')
                 }         
