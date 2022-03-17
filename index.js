@@ -31,17 +31,50 @@ botaoCadastrar.onclick = function(){
                 password:senhaCadastro.value
             })
         }).then(resposta => resposta.json()).then(resposta => {
-            localStorage.setItem('user', JSON.stringify(resposta));
-            window.location.href = './conteudo-usuario.html';
+            console.log(resposta)
+            if(resposta.errorId && resposta.errorId === 301){
+                alert('O nome de usuario já existe')
+            } else if(resposta.errorId && resposta.errorId === 201){
+                alert('O e-mail já foi cadastrado')
+            } else if(resposta.fullName){
+                alert('Seu cadastro foi criado com sucesso');
+                document.querySelector('.caixa-register').classList.add('oculto');
+                document.querySelector('.caixa-login').classList.remove('oculto');
+            }                        
         });
     }
 }
 
+const usuario = document.querySelector('#usuario');
+const senha = document.querySelector('#senha')
+
+
+fetch('https://chs-invoice-app-be.herokuapp.com/users').then(resposta => resposta.json()).then(resposta =>
+console.log(resposta))
+
+
+
 botaoLogar.onclick = function(){
-    fetch('https://chs-invoice-app-be.herokuapp.com/users')
-    .then(resposta => resposta.json()).then(resposta => {
-        console.log(resposta)
-    })
+    console.log(usuario.value, senha.value)
+    if(usuario.value && senha.value){
+        const headers = new Headers();
+            headers.append('Content-Type', 'application/json');
+            fetch('https://chs-invoice-app-be.herokuapp.com/login', {
+                headers,
+                method: 'POST',
+                body: JSON.stringify({
+                    nickname: usuario.value,
+                    password: senha.value
+                })
+            }).then(resposta => resposta.json()).then(resposta => {
+                console.log(resposta)
+                if(resposta.userId){
+                    alert('teste1')
+                } else if(resposta.errorId && resposta.errorId === 201){
+                    alert('Usuario e/ou senha icorreto/s')
+                }         
+            });
+    }
 }
 
 
