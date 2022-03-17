@@ -69,7 +69,7 @@ botaoLogar.onclick = function(){
             }).then(resposta => resposta.json()).then(resposta => {
                 console.log(resposta)
                 if(resposta.userId){
-                    alert('teste1')
+                    localStorage.setItem('userId', resposta.userId)
                 } else if(resposta.errorId && resposta.errorId === 201){
                     alert('Usuario e/ou senha icorreto/s')
                 }         
