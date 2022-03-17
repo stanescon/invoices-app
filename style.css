@@ -14,6 +14,7 @@ body {
     height: 100vh;
     background: #1E2139;  
     border-radius: 0px 20px 20px 0px;
+    z-index: 2;
 }
 .avatar{
     display: flex;
@@ -222,9 +223,69 @@ main {
 .botao-cadastre-se:hover, .botao-ir-login:hover {
     text-decoration: underline;
 }
+.caixa-novo-invoice{
+    position: absolute;
+    top: 0px;
+    height: calc(100vh - 80px);
+    width: 20%;
+    background: #141625;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: #ffffff;
+    padding: 40px 20px 40px 130px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+}
+.titulo-novo-invoice{
+    font-size: 2rem;
+    font-weight: 500;
+    margin: 20px 0px 40px 0px;
+}
+.caixa-novo-invoice label {
+    font-size: 1.2rem;
+}
+legend {
+    font-size: 1.2rem;
+}
+select{
+    padding: 10px;
+    font-family: 'Spartan', sans-serif;
+    font-size: 1rem;
+    margin: 10px 0px;
+    background: #252945;
+    color: #ffffff;
+    border-radius: 5px;
+    border: none;
+}
+option {
+    background: #252945;
+}
+.input-padrao{
+    margin: 10px 0px 40px 0px;
+    padding: 10px;
+    font-size: 1rem;
+    background: #252945;
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    font-family: 'Spartan', sans-serif;
+}
+.fundo-escuro{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    background: #000000;
+    opacity: 50%;
+}
 .barra-de-tarefas-invoices-mobile {
     display: none;
 }
+
 
 @media screen and (max-width:1265px) {
     .cabecalho {

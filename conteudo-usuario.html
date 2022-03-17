@@ -31,10 +31,10 @@
             </button>
             <p class="total-faturas">Existe um total de 0 faturas</p>
         </div>
-        <div class="conteudo-principal-vazio">
+        <div class="conteudo-principal-vazio oculto">
             <img src="./imagens/Group.png" class="imagem-invoices-vazio">
         </div>
-        <div class="conteudo-principal oculto">
+        <div class="conteudo-principal">
             <div class="cartao-invoice">
                 <p class="codigo-invoice">#RT3080</p>
                 <p class="vencimento-invoice">Vencimento: 19 Ago 2022</p>
@@ -66,6 +66,31 @@
             <button class="marcar-pago">Marcar como pago</button>
         </div>
     </main>
+    <div class="fundo-escuro"></div>
+    <div class="caixa-novo-invoice">
+        <form>
+            <h1 class="titulo-novo-invoice">Nova Fatura</h1>
+            <label for="nome-invoice">Nome</label>
+            <input type="text" id="nome-invoice" class="input-padrao" required>
+
+            <label for="valor-invoice">Valor</label>
+            <input type="number" id="valor-invoice" class="input-padrao" required>
+
+            <label for="data-vencimento">Valor</label>
+            <input type="date" id="data-vencimento" class="input-padrao" required>
+
+            <legend>Status da Fatura</legend>
+            <select>
+            <option>Pendente</option>
+            <option>Pago</option>
+            </select>
+        </form>
+
+        <div class="botoes-novo-invoice">
+            <button class="salvar-invoice-novo">Salvar e Enviar</button>
+            <button class="descartar-invoice-novo">Descartar</button>
+        </div>
+    </div>
 <script src="./conteudoUsuario.js"></script>
 </body>
 </html>
