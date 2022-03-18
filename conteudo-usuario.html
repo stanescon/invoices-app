@@ -56,7 +56,7 @@
             <div class="status-e-botoes">
                 <div class="status-invoice-selecionado">
                     <p style="margin-right: 20px;">Status:</p>
-                    <p id="status-invoice-selecionado" class="status-invoice pendente">Pendente</p>
+                    <p id="status-invoice-selecionado" class="status-invoice">Pendente</p>
                 </div>
                 <div class="botoes">
                     <button class="editar-invoice">Editar</button>
@@ -96,6 +96,31 @@
         <div class="botoes-novo-invoice">
             <button class="descartar-invoice-novo">Descartar</button>
             <button class="salvar-invoice-novo">Salvar & Enviar</button>
+        </div>
+    </div>
+
+    <div class="caixa-editar-invoice oculto">
+        <form>
+            <h1 class="titulo-novo-invoice">Editar Fatura</h1>
+            <label for="nome-invoice-novo">Nome</label>
+            <input type="text" id="nome-invoice-editado" class="input-padrao" required>
+
+            <label for="valor-invoice-novo">Valor</label>
+            <input type="number" id="valor-invoice-editado" class="input-padrao" required>
+
+            <label for="data-vencimento-novo">Vencimento</label>
+            <input type="date" id="data-vencimento-editado" class="input-padrao" required>
+
+            <legend>Status da Fatura</legend>
+            <select class="status-editado-invoice">
+            <option>Pendente</option>
+            <option>Pago</option>
+            </select>
+        </form>
+
+        <div class="botoes-novo-invoice">
+            <button class="cancelar-edicao">Cancelar</button>
+            <button class="salvar-edicao">Salvar & Enviar</button>
         </div>
     </div>
 <script src="./conteudoUsuario.js"></script>

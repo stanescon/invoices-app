@@ -223,7 +223,7 @@ main {
 .botao-cadastre-se:hover, .botao-ir-login:hover {
     text-decoration: underline;
 }
-.caixa-novo-invoice{
+.caixa-novo-invoice, .caixa-editar-invoice{
     position: absolute;
     top: 0px;
     height: calc(100vh - 80px);
@@ -244,7 +244,7 @@ form {
     font-weight: 500;
     margin: 20px 0px 40px 0px;
 }
-.caixa-novo-invoice label {
+.caixa-novo-invoice label, .caixa-editar-invoice label {
     font-size: 1.2rem;
 }
 legend {
@@ -277,7 +277,7 @@ option {
     display: flex;
     gap: 15px;
 }
-.salvar-invoice-novo, .descartar-invoice-novo{
+.salvar-invoice-novo, .descartar-invoice-novo, .cancelar-edicao, .salvar-edicao{
     font-size: 1rem;
     height: 50px;
     padding: 0px 20px;
@@ -286,11 +286,11 @@ option {
     font-family: 'Spartan', sans-serif;
     font-weight: 600;
 }
-.salvar-invoice-novo{
+.salvar-invoice-novo, .salvar-edicao{
     color: #ffffff;
     background: #7C5DFA;
 }
-.descartar-invoice-novo{
+.descartar-invoice-novo, .cancelar-edicao{
     background: #F9FAFE;
     color: #7E88C3;
 }
