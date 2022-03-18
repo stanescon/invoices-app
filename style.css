@@ -224,7 +224,7 @@ main {
     text-decoration: underline;
 }
 .caixa-novo-invoice, .caixa-editar-invoice{
-    position: absolute;
+    position: fixed;
     top: 0px;
     height: calc(100vh - 80px);
     width: 20%;
@@ -436,8 +436,47 @@ option {
     .vencimento-invoice {
         display: none;
     }
+    .caixa-novo-invoice, .caixa-editar-invoice{
+        padding: 40px 20px;
+        padding-top: 130px;
+        width: 70%;
+        height: calc(100vh - 170px);
+    }
+    .conteudo-barra-de-tarefas {
+        width: 85%;
+        margin: 150px auto;
+    }
+    .status-e-botoes{
+        gap: 30px;
+    }
+    .status-invoice-selecionado {
+        width: 30%;
+        padding-left: 0px;
+    }
+    .botoes {
+        width: 70%;
+        justify-content: flex-end;
+    }
 }
 @media screen and (max-width:650px) {
+    .status-e-botoes{
+        flex-direction: column;
+    }
+    .status-invoice-selecionado {
+        width: 80%;
+    }
+    .botoes{
+        width: 100%;
+        transform: scale(1.1);
+        justify-content: center;
+    }
+    .informacoes-do-invoice{
+        display: flex;
+        flex-direction: column;
+    }
+    .valor-invoice-selecionado {
+        font-size: 1.7rem;
+    }
     .cabecalho {
         height: 80px;
     }
@@ -497,6 +536,10 @@ option {
     }
     .valor-invoice {
         text-align: start;
+    }
+    .caixa-novo-invoice, .caixa-editar-invoice{
+        width: calc(100vw - 40px);
+        height: calc(100vh - 170px);
     }
 }
 
