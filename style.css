@@ -304,7 +304,104 @@ option {
     opacity: 50%;
 }
 .barra-de-tarefas-invoices-mobile {
-    display: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background: #1e2139;
+    height: 100px;
+    width: 100vw;
+}
+.editar-invoice, .deletar-invoice, .marcar-pago{
+    margin: 0px 5px;
+    height: 50px;
+    border-radius: 50px;
+    border: none;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: 'Spartan', sans-serif;
+    color: #ffffff ;
+}
+.editar-invoice{
+    width: 25%;
+    background: #252945;
+} 
+.deletar-invoice{
+    width: 25%;
+    background: #EC5757;
+} 
+.marcar-pago{
+    width: 35%;
+    background: #7C5DFA;
+}
+.barra-de-tarefas-invoices-desktop{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background: #141625;
+}
+.conteudo-barra-de-tarefas{
+    width: 70%;
+    margin: 100px auto;
+}
+.botao-voltar{
+    background: transparent;
+    padding: 10px;
+    font-size: 1rem;
+    font-family: 'Spartan', sans-serif;
+    color: #ffffff;
+    border: none;
+}
+.status-e-botoes{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    margin: 20px 0px;
+    background: #1E2139;
+    border-radius: 15px;
+}
+.status-invoice-selecionado {
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+    width: 20%;
+}
+.status-invoice-selecionado:first-child {
+    color: #ffffff
+}
+.botoes{
+    display: flex;
+    align-items: center;
+    width: 40%;
+}
+.informacoes-do-invoice{
+    padding: 30px;
+    background: #1E2139;
+    border-radius: 15px;
+    color: #ffffff;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row: 1fr 1fr 1fr;
+    gap: 20px;
+}
+.codigo-invoice-selecionado, .nome-invoice-selecionado, .id-invoice-selecionado, .vencimento-invoice-selecionado {
+    font-size: 1.2rem;
+}
+.codigo-invoice-selecionado, .nome-invoice-selecionado{
+    font-weight: 600;
+}
+.valor-invoice-selecionado {
+    grid-column: span 2;
+    font-size: 2rem;
+    padding: 20px;
+    background: #141625;
+    border-radius: 15px;
+    margin-top: 40px;
+    text-align: end;
 }
 
 
@@ -339,43 +436,13 @@ option {
     .vencimento-invoice {
         display: none;
     }
-    .barra-de-tarefas-invoices-mobile {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        position: fixed;
-        bottom: 0;
-        left: 0;
-        background: #1e2139;
-        height: 100px;
-        width: 100vw;
-    }
-    .editar-invoice, .deletar-invoice, .marcar-pago{
-        margin: 0px 5px;
-        height: 50px;
-        border-radius: 50px;
-        border: none;
-        font-size: 14px;
-        font-weight: 600;
-        font-family: 'Spartan', sans-serif;
-        color: #ffffff ;
-    }
-    .editar-invoice{
-        width: 25%;
-        background: #252945;
-    } 
-    .deletar-invoice{
-        width: 25%;
-        background: #EC5757;
-    } 
-    .marcar-pago{
-        width: 35%;
-        background: #7C5DFA;
-    }
 }
 @media screen and (max-width:650px) {
     .cabecalho {
         height: 80px;
+    }
+    main {
+        margin: 150px auto;
     }
     .linha-cabecalho {
         height: 80px;
@@ -386,6 +453,15 @@ option {
     .foto-avatar {
         width: 40px;
         margin: 0px 20px;
+    }
+    .titulo-app{
+        font-size: 28px;
+    }
+    .filtro {
+        margin: 0px;
+    }
+    .total-faturas{
+        line-height: 22px;
     }
     .botao-nova-fatura{
         width: 100px;

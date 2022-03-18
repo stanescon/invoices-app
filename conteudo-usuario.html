@@ -49,12 +49,30 @@
             <div class="marcacao oculto"></div>
 
         </div>
-        <div class="barra-de-tarefas-invoices-mobile oculto">
-            <button class="editar-invoice">Editar</button>
-            <button class="deletar-invoice">Deletar</button>
-            <button class="marcar-pago">Marcar como pago</button>
-        </div>
     </main>
+    <div class="barra-de-tarefas-invoices-desktop oculto">
+        <div class="conteudo-barra-de-tarefas">
+            <button class="botao-voltar">Voltar</button>   
+            <div class="status-e-botoes">
+                <div class="status-invoice-selecionado">
+                    <p style="margin-right: 20px;">Status:</p>
+                    <p id="status-invoice-selecionado" class="status-invoice pendente">Pendente</p>
+                </div>
+                <div class="botoes">
+                    <button class="editar-invoice">Editar</button>
+                    <button class="deletar-invoice">Deletar</button>
+                    <button class="marcar-pago">Marcar como pago</button>
+                </div>
+            </div> 
+            <div class="informacoes-do-invoice">
+                <p class="codigo-invoice-selecionado">#RT3080</p>
+                <p class="nome-invoice-selecionado">Alex Grim</p>
+                <p class="id-invoice-selecionado">ID: RT308000000</p>
+                <p class="vencimento-invoice-selecionado">Vencimento: 20 Set 2022</p>
+                <p class="valor-invoice-selecionado">Valor: $ 14.800,90</p>
+            </div>            
+        </div>
+    </div>
     <div class="fundo-escuro oculto"></div>
     <div class="caixa-novo-invoice oculto">
         <form>
