@@ -7,5 +7,7 @@ A proposta do aplicativo é registrar faturas com nomes, valores, datas de venci
 Link do aplicativo: https://stanescon.github.io/invoices-app/
 
 Deixo aqui também os links para os repositorios do back-end e mobile do projeto, desenvolvidos pelo Christian Seidler e Glenda Esteves respectivamente:
+
 Link do back-end: https://github.com/chseidler/invoices-app-be
+
 Link do projeto em mobile (em desenvolvimento): https://github.com/GlendaEsteves/invoices-app
